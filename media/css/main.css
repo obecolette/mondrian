@@ -1,0 +1,87 @@
+html, body {
+	width: 900px;
+	height: 1440px;
+}
+
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+
+.border {
+	border: 5px solid black;
+}
+
+.top-nav {
+	width: 100%;
+	height: 7.25%;
+	background: lightgrey;
+	float: left;
+}
+
+.right-nav {
+	width: 10%;
+	height: 92.75%;
+	background: gray;
+	float: left;
+}
+
+.content {
+	width: 90%;
+	height: 92.75%;
+	float: left;
+}
+
+.home {
+	width: 10%;
+	height: 100%;
+	background: blue;
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+
+.back {
+	width: 100%;
+	height: 7.5%;
+	right: 0;
+	bottom: 0;
+	background: yellow;
+	position: absolute;
+}
+
+.block1 {
+	width: 30%;
+	height: 20%;
+	background: red;
+}
+
+.title {
+	width: 100%;
+	height: 50%;
+	background: white;
+}
+
+.title h1 {
+	text-align: justify;
+	font-size: 3em;
+}
+
+.block2 {
+	width: 10%;
+	height: 30%;
+	background: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
