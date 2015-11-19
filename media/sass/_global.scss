@@ -39,21 +39,18 @@ body > section {
 	border-right: 5px solid #000;
 }
 
-.box.bottom {
-	border-bottom: 5px solid #000;
-}
-
-.r1 {
+:not(.newyork) > .r1 {
 	height: 163px;
 }
 .rlast {
 	height: 114px;
+	border-bottom: 5px solid #000;
 }
 
-.b1 {
+:not(.newyork) > .b1 {
 	width: 785px;
 }
-.b2 {
+:not(.newyork) > .b2 {
 	width: 115px;
 	background-color: $blue;
 }

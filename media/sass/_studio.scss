@@ -1,0 +1,48 @@
+.studio {
+	background-color: $grey;
+
+	.r2 {
+		height: 222px;
+	}
+	.r3 {
+		height: 942px;
+	}
+
+	.bwrap.r3, .bwrap.r3 > .box {
+		width: 115px;
+	}
+
+	.b3 {
+		width: 556px;
+		background-color: #fff;
+	}
+	.b4 {
+		width: 229px;
+		background-color: $red;
+	}
+	.b5 {
+		width: 114px;
+	}
+
+	.b6 {
+		width: 785px;
+	}
+	.b7 {
+		height: 167px;
+	}
+	.b8 {
+		height: 277px;
+		background-color: $red;
+	}
+	.b9 {
+		height: 498px;
+	}
+
+	.b10 {
+		width: 110px;
+	}
+	.b11 {
+		width: 790px;
+		background-color: $yellow;
+	}
+}

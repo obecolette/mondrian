@@ -8,7 +8,7 @@
 		height: 1052px;
 	}
 
-	.bwrap.r3, .bwrap.r3 > .box {
+	.bwrap.r3 {
 		width: 785px;
 	}
 	.sr1 {
@@ -26,11 +26,53 @@
 
 	.b3 {
 		width: 335px;
+		background-color: $red;
 	}
 	.b4 {
 		width: 565px;
 	}
+	.b5 {
+		width: 670px;
+		background-color: #fff;
+	}
+	.b6 {
+		width: 115px;
+	}
+	.b7 {
+		width: 246px;
+		background-color: $red;
+	}
+	.b8 {
+		width: 273px;
+		background-color: $yellow;
+	}
+	.b9 {
+		width: 266px;
+		background-color: $blue;
+	}
+	.b10 {
+		width: 670px;
+	}
+	.b11 {
+		width: 115px;
+		background-color: $yellow;
+	}
+	.b12 {
+		width: 447px;
+		background-color: $blue;
+	}
+	.b13 {
+		width: 338px;
+	}
 	.b14 {
 		width: 115px;
+	}
+
+	.b15 {
+		width: 560px;
+	}
+	.b16 {
+		width: 340px;
+		background-color: $yellow;
 	}
 }
