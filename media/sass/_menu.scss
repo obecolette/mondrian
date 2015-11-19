@@ -1,0 +1,76 @@
+.menu {
+	background-color: $grey;
+
+	.r2 {
+		height: 442px;
+	}
+	.r3 {
+		height: 221px;
+	}
+	.r4 {
+		height: 500px;
+	}
+
+	.bwrap.r2, .bwrap.r2 > .box {
+		width: 110px;
+	}
+	.bwrap.r4.bw1, .bwrap.r4.bw1 > .box {
+		width: 335px;
+	}
+	.bwrap.r4.bw2, .bwrap.r4.bw2 > .box {
+		width: 450px;
+	}
+
+	.b3 {
+		height: 112px;
+		background-color: $red;
+	}
+	.b4 {
+		height: 330px;
+	}
+	.b5 {
+		width: 225px;
+		background-color: #fff;
+	}
+	.b6 {
+		width: 450px;
+		background-color: $yellow;
+	}
+	.b7 {
+		width: 115px;
+	}
+
+	.b8 {
+		width: 560px;
+	}
+	.b9 {
+		width: 340px;
+		background-color: $blue;
+	}
+
+	.b10{
+		height: 332px;
+		background-color: $blue;
+	}
+	.b11 {
+		height: 168px;
+	}
+	.b12 {
+		height: 111px;
+	}
+	.b13 {
+		height: 389px;
+		background-color: $red;
+	}
+	.b14 {
+		width: 115px;
+	}
+
+	.b15 {
+		width: 672px;
+	}
+	.b16 {
+		width: 228px;
+		background-color: $yellow;
+	}
+}

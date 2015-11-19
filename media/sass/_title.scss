@@ -1,0 +1,78 @@
+.title {
+	background-color: $grey;
+
+	.r2 {
+		height: 110px;
+	}
+	.r3 {
+		height: 776px;
+	}
+	.r4 {
+		height: 278px;
+	}
+
+	.b3 {
+		width: 335px;
+		background-color: $red;
+	}
+	.b4 {
+		width: 450px;
+	}
+	.b5 {
+		width: 115px;
+	}
+	.b6 {
+		position: relative;
+		width: 785px;
+		background-color: #fff;
+
+		h1 {
+			@include center;
+
+			font-size: 55px;
+			text-transform: uppercase;
+
+			span {
+				font-size: 84px;
+				font-weight: 700;
+			}
+		}
+	}
+	.b7 {
+		width: 115px;
+	}
+	.b8 {
+		width: 110px;
+		background-color: $blue;
+	}
+	.b9 {
+		postition: relative;
+		width: 675px;
+
+		.swipe-icon {
+			@include center;
+			width: 100px;
+			height: 120px;
+			background-image: url("../img/swipe_hand.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+	.b10 {
+		width: 115px;
+	}
+	.b11 {
+		width: 110px;
+	}
+	.b12 {
+		width: 790px;
+		background-color: $yellow;
+
+		p {
+			@include center;
+
+			font-size: 22px;
+			font-weight: 700;
+		}
+	}
+}

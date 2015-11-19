@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+
+html, body {
+	height: 1440px;
+	width: auto;
+}
+
+body > section {
+	display: block;
+
+	height: 1440px;
+	width: 900px;
+
+	float: left;
+
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.box {
+	display: block;
+
+	float: left;
+
+	border-top: 5px solid #000;
+	border-left: 5px solid #000;
+
+}
+
+.bwrap {
+	display: block;
+
+	float: left;
+}
+
+.box.right {
+	border-right: 5px solid #000;
+}
+
+.box.bottom {
+	border-bottom: 5px solid #000;
+}
+
+.r1 {
+	height: 163px;
+}
+.rlast {
+	height: 114px;
+}
+
+.b1 {
+	width: 785px;
+}
+.b2 {
+	width: 115px;
+	background-color: $blue;
+}
