@@ -1,6 +1,14 @@
 .newyork {
 	background-color: $grey;
 
+	.box {
+		border: none;
+	}
+
+	.box.border {
+		background-color: $yellow;
+	}
+
 	.r1 {
 		height: 150px;
 	}
@@ -42,6 +50,7 @@
 	.b1 {
 		width: 258px;
 		background-color: $yellow;
+		border: 20px solid $red;
 	}
 	.b2 {
 		width: 515px;
@@ -66,6 +75,7 @@
 	}
 	.b8 {
 		width: 645px;
+		background-color: #fff;
 	}
 
 	.b9 {
@@ -95,6 +105,7 @@
 	.b16 {
 		width: 88px;
 		background-color: $yellow;
+		border: 20px solid $blue;
 	}
 	.b17 {
 		width: 347px;
@@ -111,6 +122,7 @@
 
 	.b21 {
 		height: 261px;
+		border: 20px solid $red;
 	}
 	.b22 {
 		height: 872px;
@@ -122,12 +134,12 @@
 
 	.b24 {
 		width: 210px;
+		background-color: $red;
 	}
 	.b25 {
 		width: 30px;
 	}
 	.b26 {
 		width: 660px;
-		background-color: $red;
 	}
 }

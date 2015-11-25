@@ -2,9 +2,14 @@
   box-sizing: border-box;
   position: relative; }
 
+.clearfix {
+  clear: both; }
+
 html, body {
+  position: relative;
   height: 1440px;
-  width: auto; }
+  width: auto;
+  overflow: auto; }
 
 body > section {
   display: block;
@@ -267,6 +272,10 @@ body > section {
 
 .newyork {
   background-color: #EAEAEA; }
+  .newyork .box {
+    border: none; }
+  .newyork .box.border {
+    background-color: #ffd504; }
   .newyork .r1 {
     height: 150px; }
   .newyork .r2 {
@@ -293,7 +302,8 @@ body > section {
     width: 97px; }
   .newyork .b1 {
     width: 258px;
-    background-color: #ffd504; }
+    background-color: #ffd504;
+    border: 20px solid #c72206; }
   .newyork .b2 {
     width: 515px; }
   .newyork .b3 {
@@ -308,7 +318,8 @@ body > section {
   .newyork .b7 {
     width: 30px; }
   .newyork .b8 {
-    width: 645px; }
+    width: 645px;
+    background-color: #fff; }
   .newyork .b9 {
     width: 773px; }
   .newyork .b10 {
@@ -327,7 +338,8 @@ body > section {
     width: 773px; }
   .newyork .b16 {
     width: 88px;
-    background-color: #ffd504; }
+    background-color: #ffd504;
+    border: 20px solid #1e2d80; }
   .newyork .b17 {
     width: 347px; }
   .newyork .b18 {
@@ -337,18 +349,19 @@ body > section {
   .newyork .b20 {
     width: 30px; }
   .newyork .b21 {
-    height: 261px; }
+    height: 261px;
+    border: 20px solid #c72206; }
   .newyork .b22 {
     height: 872px; }
   .newyork .b23 {
     width: 900px; }
   .newyork .b24 {
-    width: 210px; }
+    width: 210px;
+    background-color: #c72206; }
   .newyork .b25 {
     width: 30px; }
   .newyork .b26 {
-    width: 660px;
-    background-color: #c72206; }
+    width: 660px; }
 
 .studio {
   background-color: #EAEAEA; }

@@ -3,9 +3,16 @@
 	position: relative;
 }
 
+.clearfix {
+	clear: both;
+}
+
 html, body {
+	position: relative;
 	height: 1440px;
 	width: auto;
+
+	overflow: auto;
 }
 
 body > section {
