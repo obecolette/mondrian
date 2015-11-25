@@ -1,6 +1,21 @@
 .menu {
 	background-color: $grey;
 
+	.scrim {		
+		height: 100%;
+		width: 100%;
+		
+
+		p {
+			font-size: 50px;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: center;
+			width: 100%;
+			@include center;
+		}
+	}
+
 	.r2 {
 		height: 442px;
 	}
@@ -35,6 +50,10 @@
 	.b6 {
 		width: 450px;
 		background-color: $yellow;
+
+		.scrim p {
+			font-size: 70px;
+		}
 	}
 	.b7 {
 		width: 115px;
@@ -46,11 +65,21 @@
 	.b9 {
 		width: 340px;
 		background-color: $blue;
+		.scrim p {
+			font-size: 35px;
+			color: #fff;
+			line-height: 1.25em;
+		}
 	}
 
 	.b10{
 		height: 332px;
 		background-color: $blue;
+
+		.scrim p {
+			font-size: 55px;
+			color: #fff;
+		}
 	}
 	.b11 {
 		height: 168px;
@@ -61,6 +90,11 @@
 	.b13 {
 		height: 389px;
 		background-color: $red;
+
+		.scrim p {
+			font-size: 65px;
+			color: #fff;
+		}
 	}
 	.b14 {
 		width: 115px;

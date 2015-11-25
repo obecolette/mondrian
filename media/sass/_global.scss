@@ -26,8 +26,29 @@ body > section {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+
+
+.text {
+	padding: 50px 30px 0px 70px;;
+
+	h2 {
+		font-size: 48px;
+		font-weight: 700;
+
+		margin-bottom: 30px;
+	}
+
+	p {
+		font-size: 24px;
+		font-weight: 300;
+
+		margin-bottom: 30px;
+	}
+}
+
 .box {
 	display: block;
+	position: relative;
 
 	float: left;
 

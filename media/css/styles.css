@@ -18,8 +18,20 @@ body > section {
   float: left;
   font-family: 'Josefin Sans', sans-serif; }
 
+.text {
+  padding: 50px 30px 0px 70px; }
+  .text h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px; }
+  .text p {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 30px; }
+
 .box {
   display: block;
+  position: relative;
   float: left;
   border-top: 5px solid #000;
   border-left: 5px solid #000; }
@@ -109,6 +121,19 @@ body > section {
 
 .menu {
   background-color: #EAEAEA; }
+  .menu .scrim {
+    height: 100%;
+    width: 100%; }
+    .menu .scrim p {
+      font-size: 50px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
   .menu .r2 {
     height: 442px; }
   .menu .r3 {
@@ -132,6 +157,8 @@ body > section {
   .menu .b6 {
     width: 450px;
     background-color: #ffd504; }
+    .menu .b6 .scrim p {
+      font-size: 70px; }
   .menu .b7 {
     width: 115px; }
   .menu .b8 {
@@ -139,9 +166,16 @@ body > section {
   .menu .b9 {
     width: 340px;
     background-color: #1e2d80; }
+    .menu .b9 .scrim p {
+      font-size: 35px;
+      color: #fff;
+      line-height: 1.25em; }
   .menu .b10 {
     height: 332px;
     background-color: #1e2d80; }
+    .menu .b10 .scrim p {
+      font-size: 55px;
+      color: #fff; }
   .menu .b11 {
     height: 168px; }
   .menu .b12 {
@@ -149,6 +183,9 @@ body > section {
   .menu .b13 {
     height: 389px;
     background-color: #c72206; }
+    .menu .b13 .scrim p {
+      font-size: 65px;
+      color: #fff; }
   .menu .b14 {
     width: 115px; }
   .menu .b15 {
