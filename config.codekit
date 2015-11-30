@@ -38,6 +38,83 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/media\/img\/menu_london.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 127472,
+		"inputAbbreviatedPath": "\/media\/img\/menu_london.jpg",
+		"outputAbbreviatedPath": "\/media\/img\/menu_london.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/media\/img\/menu_ny.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 143423,
+		"inputAbbreviatedPath": "\/media\/img\/menu_ny.jpg",
+		"outputAbbreviatedPath": "\/media\/img\/menu_ny.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/media\/img\/menu_paris.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.30898e+06,
+		"inputAbbreviatedPath": "\/media\/img\/menu_paris.jpg",
+		"outputAbbreviatedPath": "\/media\/img\/menu_paris.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/media\/img\/menu_studio.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 209806,
+		"inputAbbreviatedPath": "\/media\/img\/menu_studio.jpg",
+		"outputAbbreviatedPath": "\/media\/img\/menu_studio.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/media\/img\/paris2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 336381,
+		"inputAbbreviatedPath": "\/media\/img\/paris2.jpg",
+		"outputAbbreviatedPath": "\/media\/img\/paris2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/media\/img\/paris3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 524288,
+		"inputAbbreviatedPath": "\/media\/img\/paris3.jpg",
+		"outputAbbreviatedPath": "\/media\/img\/paris3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/media\/img\/paris4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/media\/img\/paris4.jpg",
+		"outputAbbreviatedPath": "\/media\/img\/paris4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/media\/img\/swipe_hand.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -45,6 +122,17 @@
 		"initialSize": 12820,
 		"inputAbbreviatedPath": "\/media\/img\/swipe_hand.png",
 		"outputAbbreviatedPath": "\/media\/img\/swipe_hand.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/media\/img\/tap_hand.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1505,
+		"inputAbbreviatedPath": "\/media\/img\/tap_hand.png",
+		"outputAbbreviatedPath": "\/media\/img\/tap_hand.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

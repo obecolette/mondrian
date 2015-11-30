@@ -90,6 +90,7 @@
 	}
 	.b12 {
 		width: 236px;
+		background-color: #fff;
 	}
 	.b13 {
 		width: 30px;
@@ -134,12 +135,15 @@
 
 	.b24 {
 		width: 210px;
-		background-color: $red;
 	}
 	.b25 {
 		width: 30px;
 	}
 	.b26 {
 		width: 660px;
+
+		background-color: $red;
+
+		color: #fff;
 	}
 }

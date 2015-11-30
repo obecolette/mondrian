@@ -40,15 +40,30 @@
 	}
 	.b7 {
 		width: 246px;
-		background-color: $red;
+		// background-color: $red;
+		@include bg_img ("../img/menu_studio.jpg");
+
+		.scrim {
+			@include red();
+		}
 	}
 	.b8 {
 		width: 273px;
-		background-color: $yellow;
+		// background-color: $yellow;
+		@include bg_img ("../img/paris2.jpg");
+
+		.scrim {
+			@include yellow();
+		}
 	}
 	.b9 {
 		width: 266px;
-		background-color: $blue;
+		// background-color: $blue;
+		@include bg_img ("../img/paris4.jpg");
+
+		.scrim {
+			@include blue();
+		}
 	}
 	.b10 {
 		width: 670px;
@@ -59,7 +74,26 @@
 	}
 	.b12 {
 		width: 447px;
-		background-color: $blue;
+		// background-color: $blue;
+		@include bg_img ("../img/paris3.jpg");
+
+		.scrim {
+			@include blue();
+			position: relative;
+
+			p {
+				position: absolute;
+				width: 264px;
+				@include center;
+
+				font-size: 36px;
+				text-transform: uppercase;
+				color: #fff;
+				line-height: 1.5em;
+				letter-spacing: 1.5px;
+				font-weight: 700;
+			}
+		}
 	}
 	.b13 {
 		width: 338px;

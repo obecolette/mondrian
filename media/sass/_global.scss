@@ -3,27 +3,32 @@
 	position: relative;
 }
 
-.clearfix {
-	clear: both;
-}
 
 html, body {
 	position: relative;
 	height: 1440px;
 	width: auto;
+}
 
-	overflow: auto;
+body {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	height: 1440px;
+	white-space:nowrap;
+}
+::-webkit-scrollbar {
+	display: none;
 }
 
 body > section {
-	display: block;
+	display: inline-block;
 
 	height: 1440px;
 	width: 900px;
 
-	float: left;
-
 	font-family: 'Josefin Sans', sans-serif;
+
+	white-space: normal;
 }
 
 
@@ -46,6 +51,67 @@ body > section {
 	}
 }
 
+.exit {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	&:before, &:after {
+		content: "";
+		display: block;
+
+		position: absolute;
+		top: 25%;
+		left: 12.5%;
+
+		transform: translate(-50%);
+		transform-origin: center;
+
+		height: 10px;
+		width: 80px;
+		background-color: #fff;
+	}
+	&:before {
+		transform: rotate(45deg);
+	}
+	&:after {
+		transform: rotate(-45deg);
+	}
+
+	p {
+		position: absolute;
+		width: 100%;
+		bottom: 30px;
+		color: #fff;
+		font-size: 40px;
+		text-align: center;
+	}
+}
+
+.swipe-icon {
+	width: 100px;
+	height: 80px;
+	position: absolute;
+	top: 50%;
+	right: 2%;
+	transform: translateY(-50%);
+	background-image: url("../img/swipe_hand.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.tap-icon {
+	width: 100px;
+	height: 80px;
+	position: absolute;
+	top: 50%;
+	right: 2%;
+	transform: translateY(-50%);
+	background-image: url("../img/tap_hand.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
 .box {
 	display: block;
 	position: relative;
@@ -55,6 +121,11 @@ body > section {
 	border-top: 5px solid #000;
 	border-left: 5px solid #000;
 
+}
+
+.scrim {		
+	height: 100%;
+	width: 100%;
 }
 
 .bwrap {
@@ -73,6 +144,12 @@ body > section {
 .rlast {
 	height: 114px;
 	border-bottom: 5px solid #000;
+	p {
+		@include center;
+
+		font-size: 32px;
+		font-weight: 700;
+	}
 }
 
 :not(.newyork) > .b1 {

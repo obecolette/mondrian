@@ -2,21 +2,26 @@
   box-sizing: border-box;
   position: relative; }
 
-.clearfix {
-  clear: both; }
-
 html, body {
   position: relative;
   height: 1440px;
-  width: auto;
-  overflow: auto; }
+  width: auto; }
+
+body {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 1440px;
+  white-space: nowrap; }
+
+::-webkit-scrollbar {
+  display: none; }
 
 body > section {
-  display: block;
+  display: inline-block;
   height: 1440px;
   width: 900px;
-  float: left;
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: 'Josefin Sans', sans-serif;
+  white-space: normal; }
 
 .text {
   padding: 50px 30px 0px 70px; }
@@ -29,12 +34,65 @@ body > section {
     font-weight: 300;
     margin-bottom: 30px; }
 
+.exit {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .exit:before, .exit:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 12.5%;
+    transform: translate(-50%);
+    transform-origin: center;
+    height: 10px;
+    width: 80px;
+    background-color: #fff; }
+  .exit:before {
+    transform: rotate(45deg); }
+  .exit:after {
+    transform: rotate(-45deg); }
+  .exit p {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center; }
+
+.swipe-icon {
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  background-image: url("../img/swipe_hand.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.tap-icon {
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  background-image: url("../img/tap_hand.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
 .box {
   display: block;
   position: relative;
   float: left;
   border-top: 5px solid #000;
   border-left: 5px solid #000; }
+
+.scrim {
+  height: 100%;
+  width: 100%; }
 
 .bwrap {
   display: block;
@@ -49,6 +107,13 @@ body > section {
 .rlast {
   height: 114px;
   border-bottom: 5px solid #000; }
+  .rlast p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: 700; }
 
 :not(.newyork) > .b1 {
   width: 785px; }
@@ -95,15 +160,11 @@ body > section {
     postition: relative;
     width: 675px; }
     .title .b9 .swipe-icon {
+      height: 120px;
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100px;
-      height: 120px;
-      background-image: url("../img/swipe_hand.png");
-      background-size: contain;
-      background-repeat: no-repeat; }
+      transform: translate(-50%, -50%); }
   .title .b10 {
     width: 115px; }
   .title .b11 {
@@ -111,29 +172,18 @@ body > section {
   .title .b12 {
     width: 790px;
     background-color: #ffd504; }
-    .title .b12 p {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 22px;
-      font-weight: 700; }
 
 .menu {
   background-color: #EAEAEA; }
-  .menu .scrim {
-    height: 100%;
-    width: 100%; }
-    .menu .scrim p {
-      font-size: 50px;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-align: center;
-      width: 100%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
+  .menu .scrim p {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .menu .r2 {
     height: 442px; }
   .menu .r3 {
@@ -152,44 +202,74 @@ body > section {
   .menu .b4 {
     height: 330px; }
   .menu .b5 {
+    position: relative;
     width: 225px;
     background-color: #fff; }
+    .menu .b5 .tap-icon {
+      position: absolute;
+      left: 60%;
+      top: 20%;
+      transform: translate(-50%, -50%); }
+      .menu .b5 .tap-icon p {
+        position: absolute;
+        top: 100px;
+        left: -20px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2em; }
   .menu .b6 {
     width: 450px;
-    background-color: #ffd504; }
-    .menu .b6 .scrim p {
-      font-size: 70px; }
+    background-image: url("../img/menu_paris.jpg");
+    background-size: cover;
+    background-position: center; }
+    .menu .b6 .scrim {
+      font-size: 70px;
+      background-color: rgba(255, 213, 4, 0.75); }
   .menu .b7 {
     width: 115px; }
   .menu .b8 {
     width: 560px; }
   .menu .b9 {
     width: 340px;
-    background-color: #1e2d80; }
-    .menu .b9 .scrim p {
+    background-image: url("../img/menu_studio.jpg");
+    background-size: cover;
+    background-position: center; }
+    .menu .b9 .scrim {
       font-size: 35px;
       color: #fff;
-      line-height: 1.25em; }
+      line-height: 1.25em;
+      background-color: rgba(30, 45, 128, 0.75); }
   .menu .b10 {
     height: 332px;
-    background-color: #1e2d80; }
-    .menu .b10 .scrim p {
+    background-image: url("../img/menu_london.jpg");
+    background-size: cover;
+    background-position: center; }
+    .menu .b10 .scrim {
       font-size: 55px;
-      color: #fff; }
+      color: #fff;
+      background-color: rgba(30, 45, 128, 0.75); }
   .menu .b11 {
     height: 168px; }
   .menu .b12 {
     height: 111px; }
   .menu .b13 {
     height: 389px;
-    background-color: #c72206; }
-    .menu .b13 .scrim p {
+    background-image: url("../img/menu_ny.jpg");
+    background-size: cover;
+    background-position: center; }
+    .menu .b13 .scrim {
       font-size: 65px;
-      color: #fff; }
+      color: #fff;
+      background-color: rgba(199, 34, 6, 0.75); }
   .menu .b14 {
     width: 115px; }
   .menu .b15 {
     width: 672px; }
+    .menu .b15 .swipe-icon {
+      position: absolute;
+      top: 50%;
+      right: 2%;
+      transform: translateY(-50%); }
   .menu .b16 {
     width: 228px;
     background-color: #ffd504; }
@@ -222,13 +302,25 @@ body > section {
     width: 115px; }
   .paris .b7 {
     width: 246px;
-    background-color: #c72206; }
+    background-image: url("../img/menu_studio.jpg");
+    background-size: cover;
+    background-position: center; }
+    .paris .b7 .scrim {
+      background-color: rgba(199, 34, 6, 0.75); }
   .paris .b8 {
     width: 273px;
-    background-color: #ffd504; }
+    background-image: url("../img/paris2.jpg");
+    background-size: cover;
+    background-position: center; }
+    .paris .b8 .scrim {
+      background-color: rgba(255, 213, 4, 0.75); }
   .paris .b9 {
     width: 266px;
-    background-color: #1e2d80; }
+    background-image: url("../img/paris4.jpg");
+    background-size: cover;
+    background-position: center; }
+    .paris .b9 .scrim {
+      background-color: rgba(30, 45, 128, 0.75); }
   .paris .b10 {
     width: 670px; }
   .paris .b11 {
@@ -236,7 +328,25 @@ body > section {
     background-color: #ffd504; }
   .paris .b12 {
     width: 447px;
-    background-color: #1e2d80; }
+    background-image: url("../img/paris3.jpg");
+    background-size: cover;
+    background-position: center; }
+    .paris .b12 .scrim {
+      background-color: rgba(30, 45, 128, 0.75);
+      position: relative; }
+      .paris .b12 .scrim p {
+        position: absolute;
+        width: 264px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 1.5em;
+        letter-spacing: 1.5px;
+        font-weight: 700; }
   .paris .b13 {
     width: 338px; }
   .paris .b14 {
@@ -277,13 +387,25 @@ body > section {
     width: 115px; }
   .london .b7 {
     width: 246px;
-    background-color: #c72206; }
+    background-image: url("../img/menu_studio.jpg");
+    background-size: cover;
+    background-position: center; }
+    .london .b7 .scrim {
+      background-color: rgba(199, 34, 6, 0.75); }
   .london .b8 {
     width: 273px;
-    background-color: #ffd504; }
+    background-image: url("../img/paris2.jpg");
+    background-size: cover;
+    background-position: center; }
+    .london .b8 .scrim {
+      background-color: rgba(255, 213, 4, 0.75); }
   .london .b9 {
     width: 266px;
-    background-color: #1e2d80; }
+    background-image: url("../img/paris4.jpg");
+    background-size: cover;
+    background-position: center; }
+    .london .b9 .scrim {
+      background-color: rgba(30, 45, 128, 0.75); }
   .london .b10 {
     width: 562px; }
   .london .b11 {
@@ -291,7 +413,25 @@ body > section {
     background-color: #c72206; }
   .london .b12 {
     width: 447px;
-    background-color: #ffd504; }
+    background-image: url("../img/paris3.jpg");
+    background-size: cover;
+    background-position: center; }
+    .london .b12 .scrim {
+      background-color: rgba(255, 213, 4, 0.75);
+      position: relative; }
+      .london .b12 .scrim p {
+        position: absolute;
+        width: 264px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #000;
+        line-height: 1.5em;
+        letter-spacing: 1.5px;
+        font-weight: 700; }
   .london .b13 {
     width: 338px; }
   .london .b14 {
@@ -305,7 +445,8 @@ body > section {
     width: 340px; }
   .london .b18 {
     width: 560px;
-    background-color: #1e2d80; }
+    background-color: #1e2d80;
+    color: #fff; }
 
 .newyork {
   background-color: #EAEAEA; }
@@ -365,7 +506,8 @@ body > section {
   .newyork .b11 {
     width: 30px; }
   .newyork .b12 {
-    width: 236px; }
+    width: 236px;
+    background-color: #fff; }
   .newyork .b13 {
     width: 30px; }
   .newyork .b14 {
@@ -393,12 +535,13 @@ body > section {
   .newyork .b23 {
     width: 900px; }
   .newyork .b24 {
-    width: 210px;
-    background-color: #c72206; }
+    width: 210px; }
   .newyork .b25 {
     width: 30px; }
   .newyork .b26 {
-    width: 660px; }
+    width: 660px;
+    background-color: #c72206;
+    color: #fff; }
 
 .studio {
   background-color: #EAEAEA; }

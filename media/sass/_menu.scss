@@ -1,13 +1,8 @@
 .menu {
 	background-color: $grey;
 
-	.scrim {		
-		height: 100%;
-		width: 100%;
-		
-
+	.scrim {
 		p {
-			font-size: 50px;
 			font-weight: 700;
 			text-transform: uppercase;
 			text-align: center;
@@ -44,15 +39,32 @@
 		height: 330px;
 	}
 	.b5 {
+		position: relative;
 		width: 225px;
 		background-color: #fff;
+
+		.tap-icon {
+			position: absolute;
+			left: 60%;
+			top: 20%;
+			transform: translate(-50%, -50%);
+			p {
+				position: absolute;
+				top: 100px;
+				left: -20px;
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 1.2em
+			}
+		}
 	}
 	.b6 {
 		width: 450px;
-		background-color: $yellow;
-
-		.scrim p {
+		@include bg_img ("../img/menu_paris.jpg");
+		.scrim {
 			font-size: 70px;
+
+			@include yellow();
 		}
 	}
 	.b7 {
@@ -64,21 +76,25 @@
 	}
 	.b9 {
 		width: 340px;
-		background-color: $blue;
-		.scrim p {
+		@include bg_img ("../img/menu_studio.jpg");
+		.scrim {
 			font-size: 35px;
 			color: #fff;
 			line-height: 1.25em;
+
+			@include blue();
 		}
 	}
 
 	.b10{
 		height: 332px;
-		background-color: $blue;
+		@include bg_img ("../img/menu_london.jpg");
 
-		.scrim p {
+		.scrim {
 			font-size: 55px;
 			color: #fff;
+
+			@include blue();
 		}
 	}
 	.b11 {
@@ -89,11 +105,12 @@
 	}
 	.b13 {
 		height: 389px;
-		background-color: $red;
+		@include bg_img ("../img/menu_ny.jpg");
 
-		.scrim p {
+		.scrim {
 			font-size: 65px;
 			color: #fff;
+			@include red();
 		}
 	}
 	.b14 {
@@ -102,6 +119,13 @@
 
 	.b15 {
 		width: 672px;
+
+		.swipe-icon {
+			position: absolute;
+			top: 50%;
+			right: 2%;
+			transform: translateY(-50%);
+		}
 	}
 	.b16 {
 		width: 228px;

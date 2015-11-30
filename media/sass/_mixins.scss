@@ -4,3 +4,23 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+$red: #c72206;
+$blue: #1e2d80;
+$yellow: #ffd504;
+
+@mixin red ($opac: 0.75) {
+	background-color: rgba(199, 34, 6, $opac);
+}
+@mixin blue ($opac: 0.75) {
+	background-color: rgba(30, 45, 128, $opac);
+}
+@mixin yellow ($opac: 0.75) {
+	background-color: rgba(255, 213, 4, $opac);
+}
+
+@mixin bg_img ($url) {
+	background-image: url( $url);
+	background-size: cover;
+	background-position: center;
+}

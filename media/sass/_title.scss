@@ -50,12 +50,8 @@
 		width: 675px;
 
 		.swipe-icon {
-			@include center;
-			width: 100px;
 			height: 120px;
-			background-image: url("../img/swipe_hand.png");
-			background-size: contain;
-			background-repeat: no-repeat;
+			@include center;
 		}
 	}
 	.b10 {
@@ -67,12 +63,5 @@
 	.b12 {
 		width: 790px;
 		background-color: $yellow;
-
-		p {
-			@include center;
-
-			font-size: 22px;
-			font-weight: 700;
-		}
 	}
 }
