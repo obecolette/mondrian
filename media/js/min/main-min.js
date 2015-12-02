@@ -1,0 +1,1 @@
+TweenLite.to(window,2,{scrollTo:{y:400},ease:Power2.easeOut}),window.querySelectorAll("load",function(){var e=document.getElementsByTagName("section"),n=null;swipedetect(e,function(e){if("none"!=e){clearTimeout(n);var t=e+"swipe-icon.jpg";inner.style.background="transparent url("+bgimage+") center center no-repeat",n=setTimeout(function(){inner.style.background=""},1e3)}})},!1);
