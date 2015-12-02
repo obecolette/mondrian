@@ -662,7 +662,7 @@ body > section {
     width: 115px; }
   .studio .b6 {
     width: 785px; }
-    .studio .b6 div {
+    .studio .b6 .drag {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -672,12 +672,84 @@ body > section {
       border: 5px solid black;
       top: 15%;
       height: 111px; }
-      .studio .b6 div p {
+      .studio .b6 .drag p {
         margin: 0;
         top: -24px;
         width: 250px;
         left: -24px;
         font-weight: 700; }
+    .studio .b6 .color-palette {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: relative;
+      top: 84%;
+      width: 474px;
+      height: 176px;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      border: 5px solid black; }
+      .studio .b6 .color-palette h2 {
+        font-size: 28px;
+        top: -36px; }
+      .studio .b6 .color-palette .square {
+        height: 122px;
+        width: 122px;
+        display: inline-block;
+        margin-left: 22px;
+        top: -35px; }
+      .studio .b6 .color-palette .red {
+        background: #c72206; }
+      .studio .b6 .color-palette .yellow {
+        background: #ffd504; }
+      .studio .b6 .color-palette .blue {
+        background: #1e2d80; }
+    .studio .b6 #stage {
+      perspective: 200px;
+      -webkit-perspective: 200px;
+      transform-style: preserve-3d;
+      perspective-origin: 50% 50%;
+      width: 785px;
+      overflow: hidden;
+      top: -14%; }
+    .studio .b6 .target {
+      height: 785px;
+      width: 785px;
+      float: left;
+      transition: 2s;
+      transform-style: preserve-3d; }
+      .studio .b6 .target .side {
+        height: 785px;
+        width: 785px;
+        position: absolute;
+        -webkit-background-size: cover;
+        background-size: cover;
+        backface-visibility: hidden;
+        border-bottom: 5px black solid;
+        border-right: 5px black solid;
+        transition: 3s;
+        transform-style: preserve-3d; }
+    .studio .b6 .target:hover {
+      transform: rotateY(180deg);
+      transition: 1s; }
+    .studio .b6 .target .side-1 {
+      transform: rotateY(-90deg) translateZ(-392.5px);
+      transform-origin: 50%, 50%, 392.5px; }
+    .studio .b6 .target .side-2 {
+      transform: rotateY(90deg) translateZ(-392.5px);
+      transform-origin: 50%, 50%, 392.5px; }
+    .studio .b6 .target .side-3 {
+      transform: rotateX(90deg) translateZ(-392.5px);
+      transform-origin: 50%, 50%, 392.5px; }
+    .studio .b6 .target .side-4 {
+      transform: rotateX(-90deg) translateZ(-392.5px);
+      transform-origin: 50%, 50%, 392.5px; }
+    .studio .b6 .target .side-back {
+      transform: translateZ(-392.5px);
+      background-color: white;
+      transform-origin: 50%, 50%, 392.5px; }
   .studio .b7 {
     height: 167px; }
   .studio .b8 {

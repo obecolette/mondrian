@@ -1,0 +1,23 @@
+{
+  "name": "mondrian",
+  "version": "1.0.0",
+  "description": "interactive teams projects - creative circus 2015",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obecolette/mondrian.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obecolette/mondrian/issues"
+  },
+  "homepage": "https://github.com/obecolette/mondrian#readme",
+  "dependencies": {
+    "gsap": "^1.18.0",
+    "jump.js": "^0.3.0"
+  }
+}
