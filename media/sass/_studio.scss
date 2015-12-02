@@ -81,13 +81,18 @@
 		}
 
 		#stage {
-			perspective: 200px;
-			-webkit-perspective: 200px;
+			perspective: 300px;
+			-webkit-perspective: 300px;
 			transform-style: preserve-3d;
 			perspective-origin: 50% 50%;
 			width: 785px;
 			overflow: hidden;
 			top: -14%;
+		}
+
+		.piece {
+			position: absolute;
+			z-index: 99999;
 		}
 
 		.target {
@@ -110,10 +115,10 @@
 			}
 		}
 
-		.target:hover {
-			transform: rotateY(180deg);
-			transition: 1s;
-		}
+		// .target:hover {
+		// 	transform: rotateY(180deg);
+		// 	transition: 1s;
+		// }
 
 		.target .side-1 {
 			transform: rotateY(-90deg) translateZ(-392.5px);
