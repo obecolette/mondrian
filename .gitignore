@@ -1,3 +1,5 @@
 media/sass/.sass-cache
 /npm-debug.log
 /node_modules/
+config.codekit
+media/sass/config.codekit
