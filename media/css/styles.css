@@ -556,11 +556,31 @@ body > section {
     background-color: #fff; }
   .studio .b4 {
     width: 229px;
-    background-color: #c72206; }
+    background-image: url("../img/menu_paris.jpg");
+    background-size: cover;
+    background-position: center; }
+    .studio .b4 .scrim {
+      background-color: rgba(199, 34, 6, 0.75); }
   .studio .b5 {
     width: 115px; }
   .studio .b6 {
     width: 785px; }
+    .studio .b6 div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ffd504;
+      width: 328px;
+      border: 5px solid black;
+      top: 15%;
+      height: 111px; }
+      .studio .b6 div p {
+        margin: 0;
+        top: -24px;
+        width: 250px;
+        left: -24px;
+        font-weight: 700; }
   .studio .b7 {
     height: 167px; }
   .studio .b8 {
