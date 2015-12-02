@@ -203,17 +203,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/media\/js\/min\/animate-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/media\/js\/min\/animate-min.js",
-		"outputAbbreviatedPath": "\/media\/js\/min\/min\/animate-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/media\/js\/min\/main-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -852,7 +841,7 @@
 			"flagValue": -1
 			},
 		"undef": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"unused": {

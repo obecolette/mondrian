@@ -1,1 +1,22 @@
-TweenLite.to(window,2,{scrollTo:{y:400},ease:Power2.easeOut}),window.querySelectorAll("load",function(){var e=document.getElementsByTagName("section"),n=null;swipedetect(e,function(e){if("none"!=e){clearTimeout(n);var t=e+"swipe-icon.jpg";inner.style.background="transparent url("+bgimage+") center center no-repeat",n=setTimeout(function(){inner.style.background=""},1e3)}})},!1),function(){window.addEventListener("touchend",e,!1);var e=function(e){window.setInterval(n,1)},n=function(){console.log("interval ended")}}();
+(function() {
+    var moveToSection = function() {
+        var scrollSection = $(window).scrollLeft() / 900;
+        console.log("scrollSection: " + scrollSection);
+        TweenMax.to($(window), .5, {
+            scrollTo: {
+                x: Math.round(scrollSection) * 900 + "px"
+            }
+        });
+        window.removeEventListener("touchend", function() {
+            window.setInterval(moveToSection, 1e3);
+        }, false);
+    };
+    window.addEventListener("touchstart", function() {
+        window.addEventListener("touchend", function() {
+            window.setInterval(moveToSection, 1e3);
+        }, false);
+    }, false);
+    window.addEventListener("touchmove", function() {
+        console.log($(window).scrollLeft());
+    }, false);
+})();
