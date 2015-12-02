@@ -20,3 +20,14 @@ window.querySelectorAll('load', function(){
     }
   });
 }, false);
+
+(function() {
+  window.addEventListener("touchend", scrollToSection, false);
+  var scrollToSection = function (e) {
+    window.setInterval(scrollCallback, 1);
+  };
+
+  var scrollCallback = function () {
+    console.log("interval ended");
+  };
+})();
