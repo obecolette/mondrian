@@ -5,10 +5,6 @@
 	transform: translate(-50%, -50%);
 }
 
-$red: #c72206;
-$blue: #1e2d80;
-$yellow: #ffd504;
-
 @mixin red ($opac: 0.75) {
 	background-color: rgba(199, 34, 6, $opac);
 }
@@ -17,6 +13,9 @@ $yellow: #ffd504;
 }
 @mixin yellow ($opac: 0.75) {
 	background-color: rgba(255, 213, 4, $opac);
+}
+@mixin white ($opac: 0.75) {
+	background-color: rgba(255, 255, 255, $opac);
 }
 
 @mixin bg_img ($url) {

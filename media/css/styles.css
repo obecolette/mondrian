@@ -486,35 +486,89 @@ body > section {
     width: 515px; }
   .newyork .b3 {
     width: 30px; }
+    .newyork .b3:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      box-shadow: inset 0 40px #ffd504, inset 0 70px #c72206; }
   .newyork .b4 {
     width: 97px;
     background-color: #1e2d80; }
   .newyork .b5 {
     width: 900px; }
+    .newyork .b5:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      box-shadow: inset 30px 0 #ffd504, inset 60px 0 #c72206, inset 98px 0 #ffd504, inset 128px 0 #1e2d80, inset 220px 0 #ffd504, inset 250px 0 #c72206, inset 280px 0 #ffd504, inset 310px 0 #1e2d80, inset 610px 0 #ffd504, inset 640px 0 #fff, inset 670px 0 #ffd504, inset 700px 0 #c72206, inset 775px 0 #ffd504, inset 805px 0 #1e2d80; }
   .newyork .b6 {
     width: 98px; }
   .newyork .b7 {
     width: 30px; }
+    .newyork .b7:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      box-shadow: inset 0 40px #ffd504, inset 0 70px #fff, inset 0 100px #ffd504, inset 0 130px #1e2d80, inset 0 220px #ffd504, inset 0 250px #c72206, inset 0 280px #ffd504, inset 0 310px #1e2d80, inset 0 540px #ffd504, inset 0 570px #fff; }
   .newyork .b8 {
     width: 645px;
     background-color: #fff; }
   .newyork .b9 {
     width: 773px; }
+    .newyork .b9:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      box-shadow: inset 10px 0 #ffd504, inset 40px 0 #1e2d80, inset 98px 0 #ffd504, inset 128px 0 #c72206, inset 239px 0 #ffd504, inset 269px 0 #1e2d80, inset 330px 0 #ffd504, inset 360px 0 #fff, inset 507px 0 #ffd504, inset 537px 0 #c72206, inset 620px 0 #ffd504, inset 650px 0 #fff, inset 720px 0 #ffd504, inset 750px 0 #c72206; }
   .newyork .b10 {
     width: 240px;
-    background-color: #c72206; }
+    background-image: url("../img/ny2.jpg");
+    background-size: cover;
+    background-position: center; }
+    .newyork .b10 .scrim {
+      background-color: rgba(199, 34, 6, 0.75); }
   .newyork .b11 {
     width: 30px; }
+    .newyork .b11:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      box-shadow: inset 0 60px #ffd504, inset 0 90px #fff, inset 0 150px #ffd504, inset 0 180px #1e2d80; }
   .newyork .b12 {
     width: 236px;
-    background-color: #fff; }
+    background-image: url("../img/ny3.jpg");
+    background-size: cover;
+    background-position: center; }
+    .newyork .b12 .scrim {
+      background-color: rgba(255, 255, 255, 0.75); }
   .newyork .b13 {
     width: 30px; }
+    .newyork .b13:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      box-shadow: inset 0 90px #ffd504, inset 0 120px #1e2d80; }
   .newyork .b14 {
     width: 237px;
-    background-color: #1e2d80; }
+    background-image: url("../img/ny5.jpg");
+    background-size: cover;
+    background-position: center; }
+    .newyork .b14 .scrim {
+      background-color: rgba(30, 45, 128, 0.75); }
   .newyork .b15 {
     width: 773px; }
+    .newyork .b15:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      box-shadow: inset 20px 0 #ffd504, inset 50px 0 #fff, inset 160px 0 #ffd504, inset 190px 0 #c72206, inset 239px 0 #ffd504, inset 269px 0 #fff, inset 330px 0 #ffd504, inset 360px 0 #1e2d80, inset 434px 0 #ffd504, inset 464px 0 #fff, inset 507px 0 #ffd504, inset 537px 0 #1e2d80, inset 590px 0 #ffd504, inset 620px 0 #fff; }
   .newyork .b16 {
     width: 88px;
     background-color: #ffd504;
@@ -523,10 +577,41 @@ body > section {
     width: 347px; }
   .newyork .b18 {
     width: 30px; }
+    .newyork .b18:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      box-shadow: inset 0 80px #ffd504, inset 0 110px #fff; }
   .newyork .b19 {
-    width: 308px; }
+    width: 308px;
+    background-image: url("../img/ny4.jpg");
+    background-size: cover;
+    background-position: center; }
+    .newyork .b19 .scrim {
+      background-color: rgba(255, 255, 255, 0.75);
+      position: relative; }
+      .newyork .b19 .scrim p {
+        position: absolute;
+        width: 264px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #000;
+        line-height: 1.5em;
+        letter-spacing: 1.5px;
+        font-weight: 700; }
   .newyork .b20 {
     width: 30px; }
+    .newyork .b20:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      box-shadow: inset 0 140px #ffd504, inset 0 170px #fff, inset 0 270px #ffd504, inset 0 300px #1e2d80, inset 0 460px #ffd504, inset 0 490px #fff, inset 0 520px #ffd504, inset 0 550px #c72206, inset 0 690px #ffd504, inset 0 720px #fff, inset 0 830px #ffd504, inset 0 860px #1e2d80, inset 0 890px #ffd504, inset 0 920px #fff, inset 0 952px #ffd504, inset 0 982px #c72206, inset 0 1070px #ffd504, inset 0 1100px #fff; }
   .newyork .b21 {
     height: 261px;
     border: 20px solid #c72206; }
@@ -534,10 +619,22 @@ body > section {
     height: 872px; }
   .newyork .b23 {
     width: 900px; }
+    .newyork .b23:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      box-shadow: inset 90px 0 #ffd504, inset 120px 0 #c72206, inset 209px 0 #ffd504, inset 239px 0 #fff, inset 434px 0 #ffd504, inset 464px 0 #c72206, inset 534px 0 #ffd504, inset 564px 0 #1e2d80, inset 774px 0 #ffd504, inset 804px 0 #1e2d80, inset 870px 0 #ffd504, inset 900px 0 #c72206; }
   .newyork .b24 {
     width: 210px; }
   .newyork .b25 {
     width: 30px; }
+    .newyork .b25:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      box-shadow: inset 0 65px #ffd504, inset 0 95px #1e2d80; }
   .newyork .b26 {
     width: 660px;
     background-color: #c72206;

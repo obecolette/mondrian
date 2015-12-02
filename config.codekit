@@ -82,6 +82,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/media\/img\/ny2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 109662,
+		"inputAbbreviatedPath": "\/media\/img\/ny2.jpg",
+		"outputAbbreviatedPath": "\/media\/img\/ny2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/media\/img\/ny3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 242953,
+		"inputAbbreviatedPath": "\/media\/img\/ny3.jpg",
+		"outputAbbreviatedPath": "\/media\/img\/ny3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/media\/img\/ny4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.42954e+06,
+		"inputAbbreviatedPath": "\/media\/img\/ny4.jpg",
+		"outputAbbreviatedPath": "\/media\/img\/ny4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/media\/img\/ny5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 120783,
+		"inputAbbreviatedPath": "\/media\/img\/ny5.jpg",
+		"outputAbbreviatedPath": "\/media\/img\/ny5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/media\/img\/paris2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

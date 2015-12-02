@@ -57,6 +57,15 @@
 	}
 	.b3 {
 		width: 30px;
+
+		&:after {
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			box-shadow: inset 0 40px $yellow,
+						inset 0 70px $red;
+		}
 	}
 	.b4 {
 		width: 97px;
@@ -65,6 +74,27 @@
 
 	.b5 {
 		width: 900px;
+
+		&:after {
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			box-shadow: inset 30px 0 $yellow,
+						inset 60px 0 $red,
+						inset 98px 0 $yellow,
+						inset 128px 0 $blue,
+						inset 220px 0 $yellow,
+						inset 250px 0 $red,
+						inset 280px 0 $yellow,
+						inset 310px 0 $blue,
+						inset 610px 0 $yellow,
+						inset 640px 0 #fff,
+						inset 670px 0 $yellow,
+						inset 700px 0 $red,
+						inset 775px 0 $yellow,
+						inset 805px 0 $blue;
+		}
 	}
 
 	.b6 {
@@ -72,6 +102,23 @@
 	}
 	.b7 {
 		width: 30px;
+
+		&:after {
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			box-shadow: inset 0 40px $yellow,
+						inset 0 70px #fff,
+						inset 0 100px $yellow,
+						inset 0 130px $blue,
+						inset 0 220px $yellow,
+						inset 0 250px $red,
+						inset 0 280px $yellow,
+						inset 0 310px $blue,
+						inset 0 540px $yellow,
+						inset 0 570px #fff;
+		}
 	}
 	.b8 {
 		width: 645px;
@@ -80,27 +127,101 @@
 
 	.b9 {
 		width: 773px;
+
+		&:after {
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			box-shadow: inset 10px 0 $yellow,
+						inset 40px 0 $blue,
+						inset 98px 0 $yellow,
+						inset 128px 0 $red,
+						inset 239px 0 $yellow,
+						inset 269px 0 $blue,
+						inset 330px 0 $yellow,
+						inset 360px 0 #fff,
+						inset 507px 0 $yellow,
+						inset 537px 0 $red,
+						inset 620px 0 $yellow,
+						inset 650px 0 #fff,
+						inset 720px 0 $yellow,
+						inset 750px 0 $red;
+		}
 	}
 	.b10 {
 		width: 240px;
-		background-color: $red;
+		@include bg_img ("../img/ny2.jpg");
+
+		.scrim {
+			@include red();
+		}
 	}
 	.b11 {
 		width: 30px;
+
+		&:after {
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			box-shadow: inset 0 60px $yellow,
+						inset 0 90px #fff,
+						inset 0 150px $yellow,
+						inset 0 180px $blue;
+		}
 	}
 	.b12 {
 		width: 236px;
-		background-color: #fff;
+		@include bg_img ("../img/ny3.jpg");
+
+		.scrim {
+			@include white();
+		}
 	}
 	.b13 {
 		width: 30px;
+
+		&:after {
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			box-shadow: inset 0 90px $yellow,
+						inset 0 120px $blue;
+		}
 	}
 	.b14 {
 		width: 237px;
-		background-color: $blue;
+		@include bg_img ("../img/ny5.jpg");
+
+		.scrim {
+			@include blue();
+		}
 	}
 	.b15 {
 		width: 773px;
+
+		&:after {
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			box-shadow: inset 20px 0 $yellow,
+						inset 50px 0 #fff,
+						inset 160px 0 $yellow,
+						inset 190px 0 $red,
+						inset 239px 0 $yellow,
+						inset 269px 0 #fff,
+						inset 330px 0 $yellow,
+						inset 360px 0 $blue,
+						inset 434px 0 $yellow,
+						inset 464px 0 #fff,
+						inset 507px 0 $yellow,
+						inset 537px 0 $blue,
+						inset 590px 0 $yellow,
+						inset 620px 0 #fff;
+		}
 	}
 
 	.b16 {
@@ -113,12 +234,66 @@
 	}
 	.b18 {
 		width: 30px;
+
+		&:after {
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			box-shadow: inset 0 80px $yellow,
+						inset 0 110px #fff;
+		}
 	}
 	.b19 {
 		width: 308px;
+
+		@include bg_img ("../img/ny4.jpg");
+
+		.scrim {
+			@include white();
+			position: relative;
+
+			p {
+				position: absolute;
+				width: 264px;
+				@include center;
+
+				font-size: 36px;
+				text-transform: uppercase;
+				color: #000;
+				line-height: 1.5em;
+				letter-spacing: 1.5px;
+				font-weight: 700;
+			}
+		}
 	}
 	.b20 {
 		width: 30px;
+
+		&:after {
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			box-shadow: inset 0 140px $yellow,
+						inset 0 170px #fff,
+						inset 0 270px $yellow,
+						inset 0 300px $blue,
+						inset 0 460px $yellow,
+						inset 0 490px #fff,
+						inset 0 520px $yellow,
+						inset 0 550px $red,
+						inset 0 690px $yellow,
+						inset 0 720px #fff,
+						inset 0 830px $yellow,
+						inset 0 860px $blue,
+						inset 0 890px $yellow,
+						inset 0 920px #fff,
+						inset 0 952px $yellow,
+						inset 0 982px $red,
+						inset 0 1070px $yellow,
+						inset 0 1100px #fff;
+		}
 	}
 
 	.b21 {
@@ -131,6 +306,25 @@
 
 	.b23 {
 		width: 900px;
+
+		&:after {
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			box-shadow:	inset 90px 0 $yellow,
+						inset 120px 0 $red,
+						inset 209px 0 $yellow,
+						inset 239px 0 #fff,
+						inset 434px 0 $yellow,
+						inset 464px 0 $red,
+						inset 534px 0 $yellow,
+						inset 564px 0 $blue,
+						inset 774px 0 $yellow,
+						inset 804px 0 $blue,
+						inset 870px 0 $yellow,
+						inset 900px 0 $red;
+		}
 	}
 
 	.b24 {
@@ -138,6 +332,15 @@
 	}
 	.b25 {
 		width: 30px;
+
+		&:after {
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			box-shadow: inset 0 65px $yellow,
+						inset 0 95px $blue;
+		}
 	}
 	.b26 {
 		width: 660px;
