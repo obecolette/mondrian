@@ -109,7 +109,6 @@ window.addEventListener("load", function() {
       $pieceBeingDragged.removeEventListener('mousedown', startDrag);
 
       // turn off drop shadow
-
       $pieceBeingDragged.addEventListener("mousedown", beDefault);
 
       checkForWin();
