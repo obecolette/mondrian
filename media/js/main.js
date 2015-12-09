@@ -27,11 +27,11 @@
 	// 	});
 	// };
 
-	$(window).on('mousedown', function (e) {
-		e.preventDefault();
-		var initialScrollSection = Math.round($(window).scrollLeft()/900);
-		console.log('mouse down');
-	});
+	// $(window).on('mousedown', function (e) {
+	// 	e.preventDefault();
+	// 	var initialScrollSection = Math.round($(window).scrollLeft()/900);
+	// 	console.log('mouse down');
+	// });
 
 	// var waitForTouchEnd = function () {
 	// 	$(window).scrollEnd( function (innerEvent) {
@@ -77,6 +77,58 @@
 	// mc.on("panleft panright panup pandown tap press", function(ev) {
 	//     myElement.textContent = ev.type +" gesture detected.";
 	// });
+
+	$.widget('ui.custommouse', $.ui.mouse, {
+		options: {
+			mouseStart: function(e) {console.log('mouse start')},
+			mouseDrag: function(e) {console.log('mouse drag')},
+			mouseStop: function(e) {console.log('mouse stop')},
+			mouseCapture: function(e) { return true; }
+		},
+		// Forward events to custom handlers
+		_mouseStart: function(e) { return this.options.mouseStart(e); },
+		_mouseDrag: function(e) { return this.options.mouseDrag(e); },
+		_mouseStop: function(e) { return this.options.mouseStop(e); },
+		_mouseCapture: function(e) { return this.options.mouseCapture(e); },
+		// Bookkeeping, inspired by Draggable
+		widgetEventPrefix: 'custommouse',
+		_init: function() {
+			return this._mouseInit();
+		},
+		_create: function() {
+			return this.element.addClass('ui-custommouse');
+		},
+		_destroy: function() {
+			this._mouseDestroy();
+			return this.element.removeClass('ui-custommouse');
+		},
+	});
+
+	$('body > section').custommouse({
+		mouseStart: function(e) {
+			// Handle the start of a drag-and-drop sequence here ...
+			console.log('mouse start');
+		},
+		mouseDrag: function(e) {
+			// Handle the dragging ...
+			console.log('mouse drag');
+		},
+		mouseStop: function(e) {
+			// Handle the drop ...
+			console.log('mouse stop');
+		},
+		mouseCapture: function(e) {
+			// Optional event handler: Return false here when you want to ignore a
+			// drag-and-drop sequence, so the start/drag/stop events don't fire ...
+			return true;
+		}
+	});
+
+	$( ".selector" ).mouse( "_mouseDown" );
+
+	$('body > section').hammer().on('pan', function (e) {
+		console.log(e);
+	});
 
 	var pageLoad = function ($toPage, $fromPage) {
 		
