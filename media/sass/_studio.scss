@@ -90,11 +90,6 @@
 			top: -14%;
 		}
 
-		.piece {
-			position: absolute;
-			z-index: 99999;
-		}
-
 		.target {
 			height: 785px;
 			width: 785px;
@@ -117,7 +112,7 @@
 
 		// .target:hover {
 		// 	transform: rotateY(180deg);
-		// 	transition: 1s;
+		// 	transition: 2s;
 		// }
 
 		.target .side-1 {
