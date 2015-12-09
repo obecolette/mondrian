@@ -27,6 +27,12 @@
 	// 	});
 	// };
 
+	$(window).on('mouseup', function (e) {
+		e.preventDefault();
+		var initialScrollSection = Math.round($(window).scrollLeft()/900);
+		console.log('mouse down');
+	});
+
 	// var waitForTouchEnd = function () {
 	// 	$(window).scrollEnd( function (innerEvent) {
 
@@ -54,10 +60,23 @@
 	// 	console.log('pan')
 	// });
 
-$('body > section').hammer()
-    .data('hammer')
-    .get('pan')
-    .set({ direction: Hammer.DIRECTION_HORIZONTAL });
+	// $('body').hammer()
+	// 	.on('pan', function (e) {
+	// 		console.log(e);
+	// 	});
+
+	// console.log($('body > section').data('hammer'));
+
+	// var mc = $('body > section').hammer();
+
+	// // let the pan gesture support all directions.
+	// // this will block the vertical scrolling on a touch-device while on the element
+	// mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+
+	// // listen to events...
+	// mc.on("panleft panright panup pandown tap press", function(ev) {
+	//     myElement.textContent = ev.type +" gesture detected.";
+	// });
 
 	var pageLoad = function ($toPage, $fromPage) {
 		
