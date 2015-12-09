@@ -47,6 +47,7 @@
 			}
 		}
 		.color-palette {
+			z-index: 9999;
 			@include center;
 			position: relative;
 			top: 84%;
