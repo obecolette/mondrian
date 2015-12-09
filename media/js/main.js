@@ -27,7 +27,7 @@
 	// 	});
 	// };
 
-	$(window).on('mouseup', function (e) {
+	$(window).on('mousedown', function (e) {
 		e.preventDefault();
 		var initialScrollSection = Math.round($(window).scrollLeft()/900);
 		console.log('mouse down');
