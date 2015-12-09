@@ -1,1 +1,1 @@
-$(function(){$("#widget").draggable(),$(".square").draggable({revertDuration:500,appendTo:$(window),snapMode:"inner",snapTolerence:100})});
+$(function(){$("#widget").draggable(),$(".square").draggable({revertDuration:500,containment:".side-back",appendTo:$(window),snapMode:"inner",snapTolerence:100}),$(".side-back").droppable({drop:function(a,e){console.log("this"),$(this).addClass("ui-state-highlight").find("p").addClass(".tap-icon")}})});

@@ -714,7 +714,8 @@ body > section {
       perspective-origin: 50% 50%;
       width: 785px;
       overflow: hidden;
-      top: -14%; }
+      top: -14%;
+      z-index: 0; }
     .studio .b6 .target {
       height: 785px;
       width: 785px;

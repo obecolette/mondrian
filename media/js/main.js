@@ -1,6 +1,6 @@
 (function() {
 
-	// $.fn.scrollEnd = function(callback, timeout) {          
+	// $.fn.scrollEnd = function(callback, timeout) {
 	// 	$(this).scroll(function(){
 	// 		var $this = $(this);
 	// 		if ($this.data('scrollTimeout')) {
@@ -30,7 +30,7 @@
 	// var waitForTouchEnd = function () {
 	// 	$(window).scrollEnd( function (innerEvent) {
 
-			
+
 	// 			// console.log("scrollSection: " + scrollSection);
 
 	// 			var touchStop = window.setTimeout(function () {
@@ -42,7 +42,7 @@
 	// 			TweenMax.to($(window), 0.5, {scrollTo: {x: storedOffset.left} });
 
 	// 		}, 500);
-			
+
 	// 	});
 	// };
 
@@ -54,22 +54,23 @@
 	// 	console.log('pan')
 	// });
 
+
 $('body > section').hammer()
     .data('hammer')
     .get('pan')
     .set({ direction: Hammer.DIRECTION_HORIZONTAL });
 
 	var pageLoad = function ($toPage, $fromPage) {
-		
+
 		var $prevPage = $fromPage || $('body > section:eq(' + Math.round($(window).scrollLeft()/900) + ')');
 		var $nextPage = $toPage || $('body > section:eq(0)');
-		
+
 		console.log($prevPage, $nextPage);
-		
+
 		var pageTimeline = new TimelineMax({repeat: 1});
-		
+
 		$.each( $prevPage.children('.box'), function(index, $box) {
-			
+
 			var box_tl = new TimelineMax();
 
 			var leftRand = Math.random() * 100;
@@ -84,7 +85,7 @@ $('body > section').hammer()
 
 
 		$.each( $nextPage.children('.box'), function(index, $box) {
-			
+
 			var box_tl = new TimelineMax();
 
 			var leftRand = Math.random() * 100;
@@ -95,6 +96,7 @@ $('body > section').hammer()
 		});
 	};
 	pageLoad();
+
 
 
 	// var moveToSection = function () {
@@ -112,3 +114,27 @@ $('body > section').hammer()
 	//   console.log($(window).scrollLeft());
 	// }, false);
 })();
+
+$('div .exit').click(function () {
+  console.log("exit");
+});
+
+$('div .click-to-paris').click(function () {
+  console.log("paris");
+});
+
+$('div .click-to-london').click(function () {
+  console.log("london");
+});
+
+$('div .click-to-ny').click(function () {
+  console.log("ny");
+});
+
+$('div .click-to-create').click(function () {
+  console.log("create");
+});
+
+$('div .click-next').click(function () {
+  console.log("next");
+});

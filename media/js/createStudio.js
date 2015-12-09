@@ -2,8 +2,8 @@ $(function() {
   $('#widget').draggable();
 
   $( '.square' ).draggable({
-
     revertDuration: 500,
+    containment: ".side-back",
     appendTo: $(window),
     snapMode: "inner",
     snapTolerence: 100
@@ -13,17 +13,15 @@ $(function() {
 
   // $clone_instance.addClass('square_instance');
 
-  // $( '.frame' ).droppable({
-  //   activeClass: "ui-state-default",
-  //   hoverClass: "ui-state-hover",
-  //   drop: function( event, ui ) {
-  //     console.log('this');
-  //     $( this )
-  //       .addClass( "ui-state-highlight" )
-  //       .find( "p" )
-  //         .addClass( ".tap-icon" );
-  //   }
-  // });
+  $( '.side-back' ).droppable({
+    drop: function( event, ui ) {
+      console.log('this');
+      $( this )
+        .addClass( "ui-state-highlight" )
+        .find( "p" )
+          .addClass( ".tap-icon" );
+    }
+  });
 });
 
 
