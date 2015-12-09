@@ -60,13 +60,12 @@
 	// 	console.log('pan')
 	// });
 
-<<<<<<< HEAD
 
-$('body > section').hammer()
-    .data('hammer')
-    .get('pan')
-    .set({ direction: Hammer.DIRECTION_HORIZONTAL });
-=======
+// $('body > section').hammer()
+//     .data('hammer')
+//     .get('pan')
+//     .set({ direction: Hammer.DIRECTION_HORIZONTAL });
+
 	// $('body').hammer()
 	// 	.on('pan', function (e) {
 	// 		console.log(e);
@@ -133,16 +132,10 @@ $('body > section').hammer()
 
 	// $( ".selector" ).mouse( "_mouseDown" );
 
-<<<<<<< Updated upstream
 	$('body > section').hammer().on('pan', function (e) {
 		console.log(e);
 	});
->>>>>>> origin/master
-=======
-	$('body > section').on('mousestart', function () {
-		console.log('mouseStart');
-	})
->>>>>>> Stashed changes
+
 
 	var pageLoad = function ($toPage, $fromPage) {
 
