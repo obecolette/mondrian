@@ -1,12 +1,5 @@
 (function() {
-  // window.addEventListener("touchend", scrollToSection, false);
-  // var scrollToSection = function (e) {
-  //   window.setInterval(scrollCallback, 1);
-  // };
 
-  // var scrollCallback = function () {
-  //   console.log("interval ended");
-  // };
   var moveToSection = function () {
     var scrollSection = $(window).scrollLeft()/900;
     console.log("scrollSection: " + scrollSection);
