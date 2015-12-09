@@ -1,1 +1,1 @@
-$(function(){$("#widget").draggable(),$(".square_instance").draggable({revertDuration:500,appendTo:$(window),snapMode:"inner",snapTolerence:100}),$(".frame").droppable({activeClass:"ui-state-default",hoverClass:"ui-state-hover",drop:function(a,e){console.log("this"),$(this).addClass("ui-state-highlight").find("p").addClass(".tap-icon")}})});
+$(function(){$("#widget").draggable(),$(".square").draggable({revertDuration:500,appendTo:$(window),snapMode:"inner",snapTolerence:100})});
