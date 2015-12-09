@@ -111,7 +111,7 @@ $('body > section').hammer()
 		},
 	});
 
-	$('body > section').custommouse({
+	$('body').custommouse({
 		mouseStart: function(e) {
 			// Handle the start of a drag-and-drop sequence here ...
 			console.log('mouse start');
@@ -131,12 +131,18 @@ $('body > section').hammer()
 		}
 	});
 
-	$( ".selector" ).mouse( "_mouseDown" );
+	// $( ".selector" ).mouse( "_mouseDown" );
 
+<<<<<<< Updated upstream
 	$('body > section').hammer().on('pan', function (e) {
 		console.log(e);
 	});
 >>>>>>> origin/master
+=======
+	$('body > section').on('mousestart', function () {
+		console.log('mouseStart');
+	})
+>>>>>>> Stashed changes
 
 	var pageLoad = function ($toPage, $fromPage) {
 
