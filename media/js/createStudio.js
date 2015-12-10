@@ -1,12 +1,22 @@
+
+
 $(function() {
   $('#widget').draggable();
+
+
 
   $( '.square' ).draggable({
     revertDuration: 500,
     containment: ".side-back",
+    scroll: false,
     appendTo: $(window),
     snapMode: "inner",
-    snapTolerence: 100
+    snapTolerence: 100,
+    helper: 'clone',
+    start: function(event, ui) {
+      console.log("dragging started");
+      $( this ).clone(true);
+    }
   });
 
   // var $clone_instance = $('.square').clone();
@@ -17,7 +27,6 @@ $(function() {
     drop: function( event, ui ) {
       console.log('this');
       $( this )
-        .addClass( "ui-state-highlight" )
         .find( "p" )
           .addClass( ".tap-icon" );
     }
