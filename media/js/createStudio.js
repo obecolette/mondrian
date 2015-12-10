@@ -12,10 +12,8 @@ $(function() {
     appendTo: $(window),
     snapMode: "inner",
     snapTolerence: 100,
-    helper: 'clone',
     start: function(event, ui) {
       console.log("dragging started");
-      $( this ).clone(true);
     }
   });
 
