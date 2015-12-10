@@ -131,24 +131,27 @@ $('body > section').hammer()
 
 	// $( ".selector" ).mouse( "_mouseDown" );
 
-	$('body > section').hammer().on('panend', function (e) {
+	$('body').hammer().on('swipeleft', function (e) {
+		var currentSection = Math.round($(window).scrollLeft()/900);
+
+		if (currentSection < 5) {
+			pageLoad($('body > section:eq(' + (currentSection + 1) + ')'));
+		} else {
+			pageLoad($('body > section:eq(0)'));
+		}
+
+	}).on('swiperight', function (e) {
 		console.log(e.gesture.deltaX);
 		var currentSection = Math.round($(window).scrollLeft()/900);
-		if (e.gesture.deltaX < -120) {
-			if (currentSection < 5) {
-				pageLoad($('body > section:eq(' + (currentSection + 1) + ')'));
-			} else {
-				pageLoad($('body > section:eq(0)'));
-			}
-		} else
-		if (e.gesture.deltaX > 120) {
-			if (currentSection > 0) {
-				pageLoad($('body > section:eq(' + (currentSection - 1) + ')'));
-			} else {
-				pageLoad($('body > section:eq(5)'));
-			}
-			
+
+
+		if (currentSection > 0) {
+			pageLoad($('body > section:eq(' + (currentSection - 1) + ')'));
+		} else {
+			pageLoad($('body > section:eq(5)'));
 		}
+
+
 	});
 
 

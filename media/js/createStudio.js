@@ -25,6 +25,7 @@ $(function() {
     drop: function( event, ui ) {
       console.log('this');
       $( this )
+        .addClass( "ui-state-highlight" )
         .find( "p" )
           .addClass( ".tap-icon" );
     }
