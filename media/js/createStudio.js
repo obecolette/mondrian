@@ -30,4 +30,4 @@ $(function() {
 // when clicked the staic square will clone itself to initial position
 // draggable clicked square will either place in droppable or die
 
-// if an already placed draggable square is reclicked it will
+// if an already placed draggable square is reclicked it will not die, be draggable, or have the icon option to delete.

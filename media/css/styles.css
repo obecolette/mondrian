@@ -733,9 +733,6 @@ body > section {
         border-right: 5px black solid;
         transition: 3s;
         transform-style: preserve-3d; }
-    .studio .b6 .target:hover {
-      transform: rotateY(180deg);
-      transition: 2s; }
     .studio .b6 .target .side-1 {
       transform: rotateY(-90deg) translateZ(-392.5px);
       transform-origin: 50%, 50%, 392.5px; }
