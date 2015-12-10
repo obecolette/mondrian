@@ -66,18 +66,23 @@
 			.square {
 				height: 122px;
 				width: 122px;
-				display: inline-block;
-				margin-left: 22px;
-				top: -35px;
+				top: 23px;
+				position: relative;
 			}
 			.red {
 				background: $red;
+				left: 25px;
+				top: -36px;
 			}
 			.yellow {
 				background: $yellow;
+				left: 170px;
+				top: -156px;
 			}
 			.blue {
 				background: $blue;
+				left: 314px;
+				top: -278px;
 			}
 		}
 

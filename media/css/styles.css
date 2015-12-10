@@ -699,15 +699,20 @@ body > section {
       .studio .b6 .color-palette .square {
         height: 122px;
         width: 122px;
-        display: inline-block;
-        margin-left: 22px;
-        top: -35px; }
+        top: 23px;
+        position: relative; }
       .studio .b6 .color-palette .red {
-        background: #c72206; }
+        background: #c72206;
+        left: 25px;
+        top: -36px; }
       .studio .b6 .color-palette .yellow {
-        background: #ffd504; }
+        background: #ffd504;
+        left: 170px;
+        top: -156px; }
       .studio .b6 .color-palette .blue {
-        background: #1e2d80; }
+        background: #1e2d80;
+        left: 314px;
+        top: -278px; }
     .studio .b6 #stage {
       perspective: 300px;
       -webkit-perspective: 300px;
