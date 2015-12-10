@@ -83,70 +83,87 @@ $('body > section').hammer()
 	//     myElement.textContent = ev.type +" gesture detected.";
 	// });
 
-	$.widget('ui.custommouse', $.ui.mouse, {
-		options: {
-			mouseStart: function(e) {console.log('mouse start')},
-			mouseDrag: function(e) {console.log('mouse drag')},
-			mouseStop: function(e) {console.log('mouse stop')},
-			mouseCapture: function(e) { return true; }
-		},
-		// Forward events to custom handlers
-		_mouseStart: function(e) { return this.options.mouseStart(e); },
-		_mouseDrag: function(e) { return this.options.mouseDrag(e); },
-		_mouseStop: function(e) { return this.options.mouseStop(e); },
-		_mouseCapture: function(e) { return this.options.mouseCapture(e); },
-		// Bookkeeping, inspired by Draggable
-		widgetEventPrefix: 'custommouse',
-		_init: function() {
-			return this._mouseInit();
-		},
-		_create: function() {
-			return this.element.addClass('ui-custommouse');
-		},
-		_destroy: function() {
-			this._mouseDestroy();
-			return this.element.removeClass('ui-custommouse');
-		},
-	});
+	// $.widget('ui.custommouse', $.ui.mouse, {
+	// 	options: {
+	// 		mouseStart: function(e) {console.log('mouse start')},
+	// 		mouseDrag: function(e) {console.log('mouse drag')},
+	// 		mouseStop: function(e) {console.log('mouse stop')},
+	// 		mouseCapture: function(e) { return true; }
+	// 	},
+	// 	// Forward events to custom handlers
+	// 	_mouseStart: function(e) { return this.options.mouseStart(e); },
+	// 	_mouseDrag: function(e) { return this.options.mouseDrag(e); },
+	// 	_mouseStop: function(e) { return this.options.mouseStop(e); },
+	// 	_mouseCapture: function(e) { return this.options.mouseCapture(e); },
+	// 	// Bookkeeping, inspired by Draggable
+	// 	widgetEventPrefix: 'custommouse',
+	// 	_init: function() {
+	// 		return this._mouseInit();
+	// 	},
+	// 	_create: function() {
+	// 		return this.element.addClass('ui-custommouse');
+	// 	},
+	// 	_destroy: function() {
+	// 		this._mouseDestroy();
+	// 		return this.element.removeClass('ui-custommouse');
+	// 	},
+	// });
 
-	$('body').custommouse({
-		mouseStart: function(e) {
-			// Handle the start of a drag-and-drop sequence here ...
-			console.log('mouse start');
-		},
-		mouseDrag: function(e) {
-			// Handle the dragging ...
-			console.log('mouse drag');
-		},
-		mouseStop: function(e) {
-			// Handle the drop ...
-			console.log('mouse stop');
-		},
-		mouseCapture: function(e) {
-			// Optional event handler: Return false here when you want to ignore a
-			// drag-and-drop sequence, so the start/drag/stop events don't fire ...
-			return true;
-		}
-	});
+	// $('body').custommouse({
+	// 	mouseStart: function(e) {
+	// 		// Handle the start of a drag-and-drop sequence here ...
+	// 		console.log('mouse start');
+	// 	},
+	// 	mouseDrag: function(e) {
+	// 		// Handle the dragging ...
+	// 		console.log('mouse drag');
+	// 	},
+	// 	mouseStop: function(e) {
+	// 		// Handle the drop ...
+	// 		console.log('mouse stop');
+	// 	},
+	// 	mouseCapture: function(e) {
+	// 		// Optional event handler: Return false here when you want to ignore a
+	// 		// drag-and-drop sequence, so the start/drag/stop events don't fire ...
+	// 		return true;
+	// 	}
+	// });
 
 	// $( ".selector" ).mouse( "_mouseDown" );
 
-	$('body > section').hammer().on('pan', function (e) {
-		console.log(e);
+	$('body > section').hammer().on('panend', function (e) {
+		console.log(e.gesture.deltaX);
+		var currentSection = Math.round($(window).scrollLeft()/900);
+		if (e.gesture.deltaX < -120) {
+			if (currentSection < 5) {
+				pageLoad($('body > section:eq(' + (currentSection + 1) + ')'));
+			} else {
+				pageLoad($('body > section:eq(0)'));
+			}
+		} else
+		if (e.gesture.deltaX > 120) {
+			if (currentSection > 0) {
+				pageLoad($('body > section:eq(' + (currentSection - 1) + ')'));
+			} else {
+				pageLoad($('body > section:eq(5)'));
+			}
+			
+		}
 	});
 
 
 
 	var pageLoad = function ($toPage, $fromPage) {
 
-		var $prevPage = $fromPage || $('body > section:eq(' + Math.round($(window).scrollLeft()/900) + ')');
-		var $nextPage = $toPage || $('body > section:eq(0)');
+		var $prevPage = $fromPage ? $fromPage : $('body > section:eq(' + Math.round($(window).scrollLeft()/900) + ')');
+		var $nextPage = $toPage ? $toPage : $('body > section:eq(0)');
+		console.log($nextPage);
 
 		console.log($prevPage, $nextPage);
 
-		var pageTimeline = new TimelineMax({repeat: 1});
+		var pageTimeline = new TimelineMax({repeat: 1, duration: 1});
 
-		$.each( $prevPage.children('.box'), function(index, $box) {
+		$.each( $prevPage.find('.box'), function(index, $box) {
 
 			var box_tl = new TimelineMax();
 
@@ -161,14 +178,14 @@ $('body > section').hammer()
 		});
 
 
-		$.each( $nextPage.children('.box'), function(index, $box) {
+		$.each( $nextPage.find('.box'), function(index, $box) {
 
 			var box_tl = new TimelineMax();
 
 			var leftRand = Math.random() * 100;
 			var topRand = Math.random() * 100;
 
-			box_tl.fromTo($box, 2, {left: leftRand*10-500+'%', top: topRand*10-500+'%', opacity: 100 }, {left: 0, top: 0, opacity: 100});
+			box_tl.to($(window), 1, {scrollTo: {x: $nextPage.offset().left} }).fromTo($box, 1, {left: leftRand*10-500+'%', top: topRand*10-500+'%', opacity: 100 }, {left: 0, top: 0, opacity: 100});
 
 		});
 	};

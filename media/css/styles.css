@@ -5,7 +5,8 @@
 html, body {
   position: relative;
   height: 1440px;
-  width: auto; }
+  width: auto;
+  background-color: #EAEAEA; }
 
 body {
   overflow-x: scroll;
