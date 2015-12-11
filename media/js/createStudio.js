@@ -9,23 +9,24 @@ $(function() {
     revertDuration: 500,
     containment: ".side-back",
     scroll: false,
-    appendTo: $(window),
-    snapMode: "inner",
+    // appendTo: $(window),
+    // snapMode: "inner",
     snapTolerence: 100,
     start: function(event, ui) {
       console.log("dragging started");
       $(ui.helper).clone(true).insertAfter( ui.helper );
-
+      containment: ".side-back"
     }
   });
 
   $( '.side-back' ).droppable({
+    hoverClass: '.border',
     drop: function( event, ui ) {
       console.log('this');
-      $( this )
-        .addClass( "ui-state-highlight" )
-        .find( "p" )
-          .addClass( ".tap-icon" );
+      // $( this )
+      //   .addClass( "ui-state-highlight" )
+      //   .find( "p" )
+      //     .addClass( ".tap-icon" );
     }
   });
 });

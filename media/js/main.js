@@ -1,4 +1,4 @@
-(function() {
+$(document).ready(function() {
 
 	// $.fn.scrollEnd = function(callback, timeout) {
 	// 	$(this).scroll(function(){
@@ -55,10 +55,10 @@
 	// });
 
 
-$('body > section').hammer()
-    .data('hammer')
-    .get('pan')
-    .set({ direction: Hammer.DIRECTION_HORIZONTAL });
+//$('body > section').hammer()
+//    .data('hammer')
+//    .get('pan')
+//    .set({ direction: Hammer.DIRECTION_HORIZONTAL });
 
 // $('body > section').hammer()
 //     .data('hammer')
@@ -130,6 +130,10 @@ $('body > section').hammer()
 	// });
 
 	// $( ".selector" ).mouse( "_mouseDown" );
+
+
+
+	$('body').css("width", $('body > section').length * 900);
 
 	$('body').hammer().on('swipeleft', function (e) {
 		var currentSection = Math.round($(window).scrollLeft()/900);
@@ -210,7 +214,8 @@ $('body > section').hammer()
 	// window.addEventListener("touchmove", function () {
 	//   console.log($(window).scrollLeft());
 	// }, false);
-})();
+
+});
 
 $('div .exit').click(function () {
   console.log("exit");

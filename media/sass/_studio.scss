@@ -144,7 +144,7 @@
 
 		.target .side-back {
 			transform: translateZ(-392.5px);
-			background-color: white;
+			// background-color: white;
 			transform-origin: 50%, 50%, 392.5px;
 		}
 	}
@@ -166,4 +166,9 @@
 		width: 790px;
 		background-color: $yellow;
 	}
+}
+
+.border {
+	background-color: white;
+	border: 2px solid lightgray;
 }
